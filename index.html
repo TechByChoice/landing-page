@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech By Choice</title>
+</head>
+<link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+<link
+    rel="stylesheet"
+    href="css/tbc.css">
+<body>
+
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="imgs/logo-nav.svg" class="d-inline-block align-top" alt="Tech By Choice Logo">
+    </a>
+    <ul class="nav m-auto">
+        <li class="nav-item">
+            <a class="nav-link site--route" href="#home" data-route="view__home">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link site--route" href="#coc" data-route="view__coc">Code of Conduct</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link site--route" href="#diversity" data-route="view__diversity">Diversity Statement</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link site--route" href="#contact" data-route="view__contact">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+
+<section id="view__home" class="site--view">
+    <div class="jumbotron jumbotron-fluid d-flex align-items-center">
+        <div class="jumbotron__title text-white p-4">
+            <h1 class="display-3">TECH BY CHOICE</h1>
+            <p class="lead">Diverse By Design</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section class="home__about">
+            <h2 class="display-4">Our Mission</h2>
+            <p>
+                Tech By Choice’s goal is to increase the diversity of the tech industry by offering
+                low to no cost tech skill building events, workshops, and classes to anyone that
+                identifies as a person of color, woman, LGTBQ+, differently abled, or those aligned
+                with the space we're creating.
+            </p>
+
+            <p>
+                Creating a space with protected groups as our first priority will empower individuals
+                to enter the tech industry, whether it be through a technical, or non technical roles,
+                consequently increasing tech diversity and improving those individuals careers & lifestyles.
+            </p>
+        </section>
+
+        <section class="home__values">
+            <h2 class="display-4">Our Values</h2>
+            <div class="values__boxs card-deck"></div>
+        </section>
+
+        <section class="home__join--members">
+            <h2 class="display-4">Become a member</h2>
+            <ul>
+                <li>Meetup Location</li>
+                <li>Slack</li>
+            </ul>
+        </section>
+
+        <section class="home__join--leadership">
+            <h2 class="display-4">Join our Leadership Team</h2>
+            <ul>
+                <li>Community Leaders</li>
+                <li>Teachers</li>
+                <li>Mentors</li>
+                <li>Volunteers</li>
+            </ul>
+        </section>
+
+        <section class="home__join--sponsorship">
+            <h2 class="display-4">Sponsorship Opportunities</h2>
+            <ul>
+                <li>Donations</li>
+                <li>In-Kind</li>
+                <li>Venues</li>
+                <li>Food And Drink</li>
+            </ul>
+        </section>
+    </div>
+
+</section>
+<section id="view__coc" class="site--view" style="display: none">
+    <div class="container">
+        <h1>Coc</h1>
+    </div>
+</section>
+<section id="view__diversity" class="site--view" style="display: none">
+    <div class="container">
+        <h1>Diversity</h1>
+    </div>
+</section>
+<section id="view__contact" class="site--view" style="display: none">
+    <div class="container">
+        <h1>contact</h1>
+    </div>
+</section>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+<script>
+
+    // change page view
+    $('.site--route').on('click',function(e){
+
+        var nextView = $(this).attr('data-route');
+        var nextViewId = $(this).attr('id');
+        var fadeSiteViewOut = $('.site--view ').fadeOut('slow');
+
+        if(location.hash !== nextViewId) {
+            $.when( fadeSiteViewOut ).done(function(){
+                $("#" + nextView ).fadeIn('slow');
+            });
+        }
+    });
+
+    // build value block
+
+    var values = [
+        {
+            title: "Diversity",
+            description: "Diversity is key to having a well rounded outlook on any problem you may face. The more diverse a team is, is the more life experiences and viewpoints you will be privy to. ",
+            color: "red",
+            textColor: "text-white",
+            img: ""
+        },
+        {
+            title: "Empathy",
+            description: "We ask our members to come to us as they are, so we must remember to be open to meet them where they are.",
+            color: "green",
+            textColor: "text-white",
+            img: ""
+        },
+        {
+            title: "Intentional",
+            description: "To excel for our members, we must remember to put them first.",
+            color: "purple",
+            textColor: "text-white",
+            img: ""
+        },
+        {
+            title: "Teach",
+            description: "Acquiring knowledge is important, but sharing knowledge is how we grow as a group.",
+            color: "yellow",
+            textColor: "text-white",
+            img: ""
+        },
+        {
+            title: "Integrity",
+            description: "In order to keep our space a safe space, we have to make sure all of our decisions are directly inline with our mission and overall vision for our members safety.",
+            color: "blue",
+            textColor: "text-white",
+            img: ""
+        },
+    ];
+
+
+
+    $(document).ready(function(){
+        function buildValueCard(){
+            var cardDeck = $('.values__boxs');
+            $.map(values, function(value, index){
+                cardDeck.append('<div class="card bg-'+ value.color + ' ' + value.textColor +'">\n' +
+                    '<div class="card-body">\n' +
+                    '<h5 class="card-title text-center">' + value.title + '</h5>\n' +
+                    // '<p class="card-text">' + value.description + '</p>\n' +
+                    '</div>\n' +
+                    '</div>'
+                )
+                console.log(index)
+            });
+        }
+        buildValueCard()
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.bg-red {
+    background-color: #8D1B1B;
+}
+.bg-yellow {
+    background-color: #FFA700;
+}
+.bg-purple {
+    background-color: #8D1B66;
+}
+.bg-green {
+    background-color: #1B8D80;
+}
+.bg-blue {
+    background-color: #1B6B8D;
+}
+
+.site--view .jumbotron {
+    background:
+            linear-gradient(
+                    rgba(141,27,27, 0.63),
+                    rgba(141,27,27, 0.63)
+            ),
+            url(../imgs/image-3.png);
+    background-position: center;
+    background-origin: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vw;
+}
+.site--view .jumbotron__title {
+    background-color: #000;
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .site--view .jumbotron {
+        height: 90vw;
+    }
+}
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+}
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*// Extra large devices (large desktops)*/
+/*// No media query since the extra-large breakpoint*/
