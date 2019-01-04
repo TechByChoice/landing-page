@@ -1,24 +1,74 @@
-.bg-red {
-    background-color: #8D1B1B;
+/*
+
+    BRAND RELATED STYLES
+
+*/
+.text--red {
+    color: #D50000;
+}
+.text--yellow {
+    color: #FFA700;
+}
+.text--purple {
+    color: #8D1B66;
+}
+.text--green {
+    color: #1B8D80;
+}
+.text--blue {
+    color: #1B6B8D;
+}
+.text--red__hover:hover {
+    color: #D50000;
+}
+.text--yellow__hover:hover {
+    color: #FFA700;
+}
+.text--purple__hover:hover {
+    color: #8D1B66;
+}
+.text--green__hover:hover {
+    color: #1B8D80;
+}
+.text--blue__hover:hover {
+    color: #1B6B8D;
+}
+.bg-black {
+    background-color: #000;
 }
 .bg-yellow {
     background-color: #FFA700;
 }
-.bg-purple {
-    background-color: #8D1B66;
-}
-.bg-green {
-    background-color: #1B8D80;
-}
-.bg-blue {
-    background-color: #1B6B8D;
-}
 
+.page__section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    height: 100%;
+    padding: 20px;
+}
+/*
+
+   CARD STYLING
+
+*/
+.card {
+    border: 1px solid #EAEAEA;
+    box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.card.bg-black {
+    border-color: transparent;
+}
+/*
+
+    HOME PAGE
+
+*/
 .site--view .jumbotron {
     background:
             linear-gradient(
-                    rgba(141,27,27, 0.63),
-                    rgba(141,27,27, 0.63)
+                    rgba(141, 27, 27, 0.49),
+                    rgba(141, 27, 27,  0.49)
             ),
             url(../imgs/image-3.png);
     background-position: center;
@@ -27,8 +77,43 @@
     background-size: cover;
     height: 30vw;
 }
-.site--view .jumbotron__title {
-    background-color: #000;
+.home__values .card:hover {
+    /*color: #D50000;*/
+}
+.home__values .card--icon img {
+    height: 97.9px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*
+
+    MEMBERSHIP STYLES
+
+*/
+.home__join--members {
+
+}
+/*
+
+    LEADERSHIP STYLES
+
+*/
+
+.home__join--leadership {
+    background:
+            linear-gradient(
+                    rgba(255, 255, 255,  0.0),
+                    rgba(141, 27, 27, 0.49)
+
+            ),
+            url(../imgs/fist-bg-img.jpg);
+    background-position: center;
+    background-origin: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+
 }
 
 /*// Extra small devices (portrait phones, less than 576px)*/
@@ -40,7 +125,9 @@
 
 /*// Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
-
+    .home__join--leadership {
+        height: 100vw;
+    }
 }
 
 /*// Medium devices (tablets, less than 992px)*/

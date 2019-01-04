@@ -34,66 +34,111 @@
         </li>
     </ul>
 </nav>
-
 <section id="view__home" class="site--view">
-    <div class="jumbotron jumbotron-fluid d-flex align-items-center">
-        <div class="jumbotron__title text-white p-4">
+    <div class="jumbotron jumbotron-fluid d-flex align-items-center flex-wrap">
+        <div class="jumbotron__title bg-black text-white p-4">
             <h1 class="display-3">TECH BY CHOICE</h1>
-            <p class="lead">Diverse By Design</p>
+            <p class="lead">
+                <span class="text--green">Di</span><span class="text--blue">v</span><span class="text--purple">er</span><span class="text--red">s</span><span class="text--yellow">e</span> By Design
+            </p>
         </div>
+        <br>
+        <a class="btn btn-primary" href="#home__join--members">Join Today</a>
+
     </div>
 
-    <div class="container">
 
-        <section class="home__about">
-            <h2 class="display-4">Our Mission</h2>
-            <p>
-                Tech By Choice’s goal is to increase the diversity of the tech industry by offering
-                low to no cost tech skill building events, workshops, and classes to anyone that
-                identifies as a person of color, woman, LGTBQ+, differently abled, or those aligned
-                with the space we're creating.
-            </p>
+        <section class="page__section home__about">
+            <div class="container">
+                <h2 class="display-4">Our Mission</h2>
+                <p>
+                    Tech By Choice’s goal is to increase the diversity of the tech industry by offering
+                    low to no cost tech skill building events, workshops, and classes to anyone that
+                    identifies as a person of color, woman, LGTBQ+, differently abled, or those aligned
+                    with the space we're creating.
+                </p>
 
-            <p>
-                Creating a space with protected groups as our first priority will empower individuals
-                to enter the tech industry, whether it be through a technical, or non technical roles,
-                consequently increasing tech diversity and improving those individuals careers & lifestyles.
-            </p>
+                <p>
+                    Creating a space with protected groups as our first priority will empower individuals
+                    to enter the tech industry, whether it be through a technical, or non technical roles,
+                    consequently increasing tech diversity and improving those individuals careers & lifestyles.
+                </p>
+            </div>
         </section>
 
-        <section class="home__values">
-            <h2 class="display-4">Our Values</h2>
-            <div class="values__boxs card-deck"></div>
+        <section class="page__section home__values">
+            <div class="container">
+                <h2 class="display-4">Our Values</h2>
+                <div class="values__boxes card-deck"></div>
+
+                <div class="alert alert-dark text-white bg-black mt-4" role="value description">
+                    <span class="value__detail" id="value__detail--diversity">Diversity is key to having a well rounded outlook on any problem you may face. The more diverse a team is, is the more life experiences and viewpoints you will be privy to.</span>
+                    <span style="display: none" class="value__detail" id="value__detail--empathy">We ask our members to come to us as they are, so we must remember to be open to meet them where they are.</span>
+                    <span style="display: none" class="value__detail" id="value__detail--intentional">We ask our members to come to us as they are, so we must remember to be open to meet them where they are.</span>
+                    <span style="display: none" class="value__detail" id="value__detail--teach">We ask our members to come to us as they are, so we must remember to be open to meet them where they are.</span>
+                    <span style="display: none" class="value__detail" id="value__detail--integrity">We ask our members to come to us as they are, so we must remember to be open to meet them where they are.</span>
+
+                </div>
+            </div>
         </section>
 
-        <section class="home__join--members">
-            <h2 class="display-4">Become a member</h2>
-            <ul>
-                <li>Meetup Location</li>
-                <li>Slack</li>
-            </ul>
+        <section id="home__join--members" class="page__section home__join--members bg-yellow">
+            <div class="container">
+                <h2 class="display-4">Become a member</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card bg-black text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Slack</h5>
+                                <p class="card-text">The Tech By Choice Slack is a place for you to chat and share resources, tips & tricks, and funny memes with other people across the nation.</p>
+                                <a href="#" class="card-link btn btn-block btn-light">Join Our Slack</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card bg-black text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Meetup</h5>
+                                <p class="card-text">Join us for a in person classes, workshops, and other fun local events through one of our two  meetup location, <b>Los Angeles</b> &amp; <b>Oakland</b>.</p>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <a href="#" class="card-link btn btn-block btn-light">Los Angeles Meetup</a>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <a href="#" class="mt-4 mt-md-0 mt-lg-0 card-link btn btn-block btn-light">Oakland Meetup</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section class="home__join--leadership">
-            <h2 class="display-4">Join our Leadership Team</h2>
-            <ul>
-                <li>Community Leaders</li>
-                <li>Teachers</li>
-                <li>Mentors</li>
-                <li>Volunteers</li>
-            </ul>
+        <section class="page__section home__join--leadership">
+            <div class="container">
+                <h2 class="display-4">Join our <br>Leadership Team</h2>
+                <p>
+                    Join Tech By Choice and become a community Leader today!
+                    We’re always accepting applications for teachers,
+                    classroom TA’s, volunteers.
+                </p>
+                <a href="#linkToForm" class="btn btn-primary">Apply Now</a>
+            </div>
         </section>
 
-        <section class="home__join--sponsorship">
-            <h2 class="display-4">Sponsorship Opportunities</h2>
-            <ul>
-                <li>Donations</li>
-                <li>In-Kind</li>
-                <li>Venues</li>
-                <li>Food And Drink</li>
-            </ul>
+        <section class="page__section home__join--sponsorship">
+            <div class="container">
+                <h2 class="display-4">Sponsorship Opportunities</h2>
+                <ul>
+                    <li>Donations</li>
+                    <li>In-Kind</li>
+                    <li>Venues</li>
+                    <li>Food And Drink</li>
+                </ul>
+            </div>
         </section>
-    </div>
 
 </section>
 <section id="view__coc" class="site--view" style="display: none">
@@ -127,6 +172,55 @@
 
 
 <script>
+    // build value block
+
+    var values = [
+        {
+            title: "Diversity",
+            id: "diversity",
+            description: "Diversity is key to having a well rounded outlook on any problem you may face. The more diverse a team is, is the more life experiences and viewpoints you will be privy to. ",
+            color: "green",
+            icon: "icon-diversity",
+            textColor: "text-black",
+            img: ""
+        },
+        {
+            title: "Empathy",
+            id: "empathy",
+            description: "We ask our members to come to us as they are, so we must remember to be open to meet them where they are.",
+            color: "blue",
+            icon: "icon-empathy",
+            textColor: "text-black",
+            img: ""
+        },
+        {
+            title: "Intentional",
+            id: "intentional",
+            description: "To excel for our members, we must remember to put them first.",
+            color: "purple",
+            icon: "icon-intentional",
+            textColor: "text-black",
+            img: ""
+        },
+        {
+            title: "Teach",
+            id: "teach",
+            description: "Acquiring knowledge is important, but sharing knowledge is how we grow as a group.",
+            color: "red",
+            icon: "icon-teach",
+            textColor: "text-black",
+            img: ""
+        },
+        {
+            title: "Integrity",
+            id: "integrity",
+            description: "In order to keep our space a safe space, we have to make sure all of our decisions are directly inline with our mission and overall vision for our members safety.",
+            color: "yellow",
+            icon: "icon-integrity",
+            textColor: "text-black",
+            img: ""
+        },
+    ];
 
     // change page view
     $('.site--route').on('click',function(e){
@@ -142,62 +236,32 @@
         }
     });
 
-    // build value block
-
-    var values = [
-        {
-            title: "Diversity",
-            description: "Diversity is key to having a well rounded outlook on any problem you may face. The more diverse a team is, is the more life experiences and viewpoints you will be privy to. ",
-            color: "red",
-            textColor: "text-white",
-            img: ""
-        },
-        {
-            title: "Empathy",
-            description: "We ask our members to come to us as they are, so we must remember to be open to meet them where they are.",
-            color: "green",
-            textColor: "text-white",
-            img: ""
-        },
-        {
-            title: "Intentional",
-            description: "To excel for our members, we must remember to put them first.",
-            color: "purple",
-            textColor: "text-white",
-            img: ""
-        },
-        {
-            title: "Teach",
-            description: "Acquiring knowledge is important, but sharing knowledge is how we grow as a group.",
-            color: "yellow",
-            textColor: "text-white",
-            img: ""
-        },
-        {
-            title: "Integrity",
-            description: "In order to keep our space a safe space, we have to make sure all of our decisions are directly inline with our mission and overall vision for our members safety.",
-            color: "blue",
-            textColor: "text-white",
-            img: ""
-        },
-    ];
-
-
 
     $(document).ready(function(){
+
         function buildValueCard(){
-            var cardDeck = $('.values__boxs');
+            var cardDeck = $('.values__boxes');
             $.map(values, function(value, index){
-                cardDeck.append('<div class="card bg-'+ value.color + ' ' + value.textColor +'">\n' +
-                    '<div class="card-body">\n' +
-                    '<h5 class="card-title text-center">' + value.title + '</h5>\n' +
-                    // '<p class="card-text">' + value.description + '</p>\n' +
-                    '</div>\n' +
-                    '</div>'
+                cardDeck.append('<div id="'+ value.id +'" class="card text-uppercase bg-white text--'+ value.color + '__hover  ' + value.textColor +'">\n' +
+                    '<div class="card-body row">\n' +
+                    '<div class="card--icon col-md-12 pb-4"><img src="imgs/' + value.icon + '.svg" class="" alt="Tech By Choice Logo"></div>\n' +
+                    '<div class="col-md-12"> <h5 class="card-title text-center">' + value.title + '</h5></div>\n' +
+                    '</div></div>\n'
                 )
-                console.log(index)
             });
         }
+
+
+        $('.values__boxes').on('mouseenter','.card', function(e){
+
+            var currentDetail = $(this).prop('id');
+            var fadeDetailOut = $('.value__detail ').fadeOut('slow');
+
+            $.when( fadeDetailOut ).done(function(){
+                $("#value__detail--" + currentDetail ).fadeIn('slow');
+            });
+        });
+
         buildValueCard()
     });
 
