@@ -12,12 +12,12 @@
         crossorigin="anonymous">
 <link
     rel="stylesheet"
-    href="css/tbc.css">
+    href="assets/css/tbc.css">
 <body>
 
 <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
-        <img src="imgs/logo-nav.svg" class="d-inline-block align-top" alt="Tech By Choice Logo">
+        <img src="assets/imgs/logo-nav.svg" class="d-inline-block align-top" alt="Tech By Choice Logo">
     </a>
     <ul class="nav m-auto">
         <li class="nav-item">
@@ -38,9 +38,9 @@
     <div class="jumbotron jumbotron-fluid d-flex align-items-center flex-wrap">
         <div class="jumbotron__title bg-black text-white p-4">
             <h1 class="display-3">TECH BY CHOICE</h1>
-            <p class="lead">
+            <h2 class="display-4 title__tag-line">
                 <span class="text--green">Di</span><span class="text--blue">v</span><span class="text--purple">er</span><span class="text--red">s</span><span class="text--yellow">e</span> By Design
-            </p>
+            </h2>
         </div>
         <br>
         <a class="btn btn-primary" href="#home__join--members">Join Today</a>
@@ -50,7 +50,7 @@
 
         <section class="page__section home__about">
             <div class="container">
-                <h2 class="display-4">Our Mission</h2>
+                <h3 class="display-4">Our Mission</h3>
                 <p>
                     Tech By Choice’s goal is to increase the diversity of the tech industry by offering
                     low to no cost tech skill building events, workshops, and classes to anyone that
@@ -68,10 +68,11 @@
 
         <section class="page__section home__values">
             <div class="container">
-                <h2 class="display-4">Our Values</h2>
+                <h3 class="display-4">Our Values</h3>
                 <div class="values__boxes card-deck"></div>
 
-                <div class="alert alert-dark text-white bg-black mt-4" role="value description">
+                <div class="alert alert-dark text-white bg-black mt-4" aria-hidden="true">
+                    <span class="sr-only">Details on what our values mean</span>
                     <span class="value__detail" id="value__detail--diversity">Diversity is key to having a well rounded outlook on any problem you may face. The more diverse a team is, is the more life experiences and viewpoints you will be privy to.</span>
                     <span style="display: none" class="value__detail" id="value__detail--empathy">We ask our members to come to us as they are, so we must remember to be open to meet them where they are.</span>
                     <span style="display: none" class="value__detail" id="value__detail--intentional">We ask our members to come to us as they are, so we must remember to be open to meet them where they are.</span>
@@ -84,33 +85,30 @@
 
         <section id="home__join--members" class="page__section home__join--members bg-yellow">
             <div class="container">
-                <h2 class="display-4">Become a member</h2>
-                <div class="row">
-                    <div class="col-lg-6">
+                <h3 class="display-4">Become a member</h3>
+                <div class="card-deck">
+
                         <div class="card bg-black text-white">
                             <div class="card-body">
                                 <h5 class="card-title">Slack</h5>
                                 <p class="card-text">The Tech By Choice Slack is a place for you to chat and share resources, tips & tricks, and funny memes with other people across the nation.</p>
+                            </div>
+                            <div class="card-footer">
                                 <a href="#" class="card-link btn btn-block btn-light">Join Our Slack</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
+
+
                         <div class="card bg-black text-white">
                             <div class="card-body">
                                 <h5 class="card-title">Meetup</h5>
                                 <p class="card-text">Join us for a in person classes, workshops, and other fun local events through one of our two  meetup location, <b>Los Angeles</b> &amp; <b>Oakland</b>.</p>
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-6">
-                                        <a href="#" class="card-link btn btn-block btn-light">Los Angeles Meetup</a>
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <a href="#" class="mt-4 mt-md-0 mt-lg-0 card-link btn btn-block btn-light">Oakland Meetup</a>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="card-link btn btn-light">Los Angeles Meetup</a>
+                                <a href="#" class="mt-4 mt-md-0 mt-lg-0 card-link btn btn-light">Oakland Meetup</a>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
 
@@ -118,19 +116,20 @@
 
         <section class="page__section home__join--leadership">
             <div class="container">
-                <h2 class="display-4">Join our <br>Leadership Team</h2>
+                <h3 class="display-4">Join our <br>Leadership Team</h3>
                 <p>
                     Join Tech By Choice and become a community Leader today!
                     We’re always accepting applications for teachers,
                     classroom TA’s, volunteers.
                 </p>
                 <a href="#linkToForm" class="btn btn-primary">Apply Now</a>
+                <img src="assets/imgs/bg-fist-full.jpg" alt="background image of diverse fist in air">
             </div>
         </section>
 
         <section class="page__section home__join--sponsorship">
             <div class="container">
-                <h2 class="display-4">Sponsorship Opportunities</h2>
+                <h3 class="display-4">Sponsorship Opportunities</h3>
                 <ul>
                     <li>Donations</li>
                     <li>In-Kind</li>
@@ -174,7 +173,7 @@
 <script>
     // build value block
 
-    var values = [
+    let values = [
         {
             title: "Diversity",
             id: "diversity",
@@ -223,11 +222,11 @@
     ];
 
     // change page view
-    $('.site--route').on('click',function(e){
+    $('.site--route').on('click',function(){
 
-        var nextView = $(this).attr('data-route');
-        var nextViewId = $(this).attr('id');
-        var fadeSiteViewOut = $('.site--view ').fadeOut('slow');
+        let nextView = $(this).attr('data-route');
+        let nextViewId = $(this).attr('id');
+        let fadeSiteViewOut = $('.site--view ').fadeOut('slow');
 
         if(location.hash !== nextViewId) {
             $.when( fadeSiteViewOut ).done(function(){
@@ -240,11 +239,11 @@
     $(document).ready(function(){
 
         function buildValueCard(){
-            var cardDeck = $('.values__boxes');
+            let cardDeck = $('.values__boxes');
             $.map(values, function(value, index){
                 cardDeck.append('<div id="'+ value.id +'" class="card text-uppercase bg-white text--'+ value.color + '__hover  ' + value.textColor +'">\n' +
-                    '<div class="card-body row">\n' +
-                    '<div class="card--icon col-md-12 pb-4"><img src="imgs/' + value.icon + '.svg" class="" alt="Tech By Choice Logo"></div>\n' +
+                    '<div class="card-body row"><span class="sr-only"> value number'+(index+1)+') '+value.id + ' ' + value.description+'</span>\n' +
+                    '<div class="card--icon col-md-12 pb-4"><img src="./assets/imgs/' + value.icon + '.svg" class="" alt="icon representing "'+ value.id +'></div>\n' +
                     '<div class="col-md-12"> <h5 class="card-title text-center">' + value.title + '</h5></div>\n' +
                     '</div></div>\n'
                 )
@@ -252,14 +251,17 @@
         }
 
 
-        $('.values__boxes').on('mouseenter','.card', function(e){
+        $('.values__boxes').on('mouseenter','.card', function(){
 
-            var currentDetail = $(this).prop('id');
-            var fadeDetailOut = $('.value__detail ').fadeOut('slow');
+            let currentDetail = $(this).prop('id');
+            let fadeDetailOut = $('.value__detail ').fadeOut('slow');
 
             $.when( fadeDetailOut ).done(function(){
                 $("#value__detail--" + currentDetail ).fadeIn('slow');
+                $('.card').removeClass('active');
+                $('#'+currentDetail).addClass('active');
             });
+
         });
 
         buildValueCard()
