@@ -1,8 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,700|Saira:300,600');
+
+@font-face {
+    font-family: 'Limerick Serial';
+    src: url('../fonts/limerick_serial-bold-webfont.woff2') format('woff2'),
+         url('../fonts/limerick_serial-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*
 
     BRAND RELATED STYLES
 
 */
+/*
+    TYPE
+*/
+body {
+    font-family: 'Overpass';
+}
+.display-3 {
+    font-family: 'Limerick Serial';
+}
+.display-4 {
+    text-transform: uppercase;
+    font-family: 'Saira';
+    font-weight: 600;
+}
+.jumbotron__title h1 {
+    margin-bottom: -10px;
+}
+.title__tag-line {
+    margin-top: 0;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 43px;
+}
+
 .text--red {
     color: #D50000;
 }
@@ -35,6 +69,7 @@
 }
 .bg-black {
     background-color: #000;
+    border-color: #000;
 }
 .bg-yellow {
     background-color: #FFA700;
@@ -61,7 +96,16 @@
 }
 /*
 
-    HOME PAGE
+    SECTION STYLING
+
+*/
+section h3 {
+    /*margin-top: 17px;*/
+    margin-bottom: 50px;
+}
+/*
+
+    HOME TITLE
 
 */
 .site--view .jumbotron {
@@ -77,15 +121,41 @@
     background-size: cover;
     height: 30vw;
 }
-.home__values .card:hover {
-    /*color: #D50000;*/
+/*
+
+    VALUES
+
+*/
+.home__values .card-body {
+    padding-bottom: 0;
 }
 .home__values .card--icon img {
-    height: 97.9px;
+    height: 97px;
     margin: 0 auto;
     width: 100%;
 }
-
+.values__boxes  .card:after {
+    content: " ";
+    opacity: 0;
+    /*animation: all 0.005ms;*/
+    position: relative;
+    display: block;
+    top: 25px;
+    left: 40%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid black;
+    width: 0;
+    /* height: 0px; */
+}
+.values__boxes .card.active:after {
+    opacity: 100;
+    transition: opacity 1s;
+    /* height: 0px; */
+}
+.home__values .alert {
+    height: 96px;
+}
 /*
 
     MEMBERSHIP STYLES
@@ -100,43 +170,33 @@
 
 */
 
-.home__join--leadership {
-    background:
-            linear-gradient(
-                    rgba(255, 255, 255,  0.0),
-                    rgba(141, 27, 27, 0.49)
-
-            ),
-            url(../imgs/fist-bg-img.jpg);
-    background-position: center;
-    background-origin: inherit;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vw;
-
-}
+/*.home__join--leadership {*/
+    /*background-origin: inherit;*/
+    /*background-size: cover;*/
+    /*height: 100%;*/
+/*}*/
 
 /*// Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .site--view .jumbotron {
         height: 90vw;
     }
 }
 
 /*// Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
     .home__join--leadership {
         height: 100vw;
     }
 }
 
 /*// Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
 
 }
 
 /*// Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) {
+@media (max-width: 1199px) {
 
 }
 
