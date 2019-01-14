@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:400,700|Saira:300,600");
+@font-face {
+  font-family: 'Limerick Serial';
+  src: url("../../assets/fonts/limerick_serial-bold-webfont.woff2") format("woff2"), url("../fonts/limerick_serial-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.text--red {
+    color: #D50000;
+}
+.text--yellow {
+    color: #FFA700;
+}
+.text--purple {
+    color: #8D1B66;
+}
+.text--green {
+    color: #1B8D80;
+}
+.text--blue {
+    color: #1B6B8D;
+}
+.text--red__hover:hover {
+    color: #D50000;
+}
+.text--yellow__hover:hover {
+    color: #FFA700;
+}
+.text--purple__hover:hover {
+    color: #8D1B66;
+}
+.text--green__hover:hover {
+    color: #1B8D80;
+}
+.text--blue__hover:hover {
+    color: #1B6B8D;
+}
+body {
+    font-family: 'Overpass';
+}
+/*
+    navbar
+*/
+#header.header-fixed  {
+    background: rgba(224, 29, 65, 1);
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    /*color: #fff;*/
+}
+#header.header-fixed .nav-menu a {
+    color: #000;
+}
+/*
+    intro
+*/
+#logo img{
+    height: 35px;
+    width: auto;
+}
+#intro {
+    background:
+            linear-gradient(45deg,
+            rgba(224, 29, 65, 0.8),
+            rgba(255, 193, 7, 0.7)),
+            url(../imgs/image-3.png)
+            center top no-repeat;
+}
+.into--title {
+    font-family: 'Limerick Serial';
+    text-transform: uppercase;
+}
+.intro--tag-line {
+    font-family: 'Saira';
+    font-weight: 300;
+    text-align: left;
+}
