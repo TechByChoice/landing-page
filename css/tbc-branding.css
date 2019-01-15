@@ -52,6 +52,25 @@ h3,
     font-family: 'Saira';
     font-weight: 600;
 }
+
+.btn-primary {
+  font-family: "Saira", sans-serif;
+    text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+    background-color: transparent;
+}
+
+.btn-primary:hover {
+  color: #C50000;
+    border-color: #fff;
+  background: #fff;
+}
+
 /*
     navbar
 */
@@ -81,12 +100,14 @@ h3,
     -webkit-background-size: cover;
     background-size: cover;
 }
-.into--title {
-    font-family: 'Limerick Serial';
+.into--title,
+.brand-name,
+.card-title{
+    font-family: 'Limerick Serial' !important;
     text-transform: uppercase;
 }
 .intro--tag-line {
-    font-family: 'Saira';
+    font-family: 'Saira' !important;
     font-weight: 300;
     text-align: left;
 }
@@ -116,6 +137,14 @@ card-title{
 }
 
 /*
-    contact
+    coc
 */
-
+.coc #about {
+    padding-top: 100px;
+}
+.coc .nav-menu a {
+    color: #000;
+}
+.coc #mobile-nav-toggle i {
+    color: #C50000;
+}
