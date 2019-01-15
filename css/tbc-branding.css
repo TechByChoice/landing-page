@@ -47,7 +47,8 @@ h2 {
     text-transform: uppercase;
 }
 h3,
-.section-header .section-title{
+.section-header .section-title,
+.section-title{
     text-transform: uppercase;
     font-family: 'Saira';
     font-weight: 600;
